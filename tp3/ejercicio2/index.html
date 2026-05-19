@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Preferencias Tecnológicas</title>
+
+</head>
+<body>
+    <form action="datos.html" method="post">
+        <h1>Encuesta de Preferencias Tecnológicas con el profe Soto</h1>
+
+        <p>
+            <label for="lenguaje">Lenguaje favorito: </label>
+            <select id="lenguajes">
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+                <option value="CSharp">C#</option>
+            </select>
+        </p>
+        <p>
+            <label for="niveldeexperiencia"> <b> Nivel de experiencia: </b> </label> <br>
+            <input type="radio" name="experiencia" value="principiante" id="principiante">
+            <label for="principiante">Principiante </label> <br>
+            <input type="radio" name="experiencia" value="intermedio" id="intermedio">
+            <label for="intermedio">Intermedio </label> <br>
+            <input type="radio" name="experiencia" value="avanzado" id="avanzado">
+            <label for="avanzado">Avanzado </label> <br>
+        </p>
+            <b>Temas de interes: </b> <br>
+            <input type="checkbox" value="frontend">
+            <label>Frontend</label> <br>
+            <input type="checkbox" value="backend">
+            <label>Backend</label> <br>
+            <input type="checkbox" value="mobile">
+            <label>Mobile</label> <br>
+            <input type="checkbox" value="ia">
+            <label>Inteligencia Artificial</label> <br>
+
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
