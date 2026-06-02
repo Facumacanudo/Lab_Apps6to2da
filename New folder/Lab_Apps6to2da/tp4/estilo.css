@@ -1,0 +1,78 @@
+/* ==========================================
+   CONSIGNA 2: ESTILOS POR ETIQUETA
+   ========================================== */
+
+/* Fondo, tipografía y color de texto */
+body {
+    background-color: #e6f0fa; /* Un azulcito muy claro de fondo */
+    font-family: Cambria, sans-serif;
+    color: #333333;
+}
+
+/* Título: tamaño, peso (negrita) y alineación al centro */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Las etiquetas se muestran como bloque con margen inferior */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Ancho completo, espacio interno (padding) y borde */
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999999;
+}
+
+
+
+
+
+/* ID para el contenedor principal: ancho máximo, centrado y padding */
+#box-main {
+    max-width: 450px;
+    margin: 20px auto; /* El "auto" hace que se centre en la pantalla */
+    background-color: #ffffff; /* Fondo blanco para que resalte */
+    padding: 20px;
+    border: 1px solid #cccccc;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    
+}
+
+/* Clase campo para agrupar con un margen inferior */
+.campo {
+    margin-bottom: 15px;
+}
+
+/* Clase boton-enviar: color, padding y bordes redondeados */
+.boton-enviar {
+    background-color: #00358a; /* Azul de Boca */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+/* Cuando el usuario hace clic o selecciona el menú desplegable */
+select:focus {
+    border-color: #f2a900; /* Borde amarillo/oro */
+    background-color: #fffdf0;
+}
+
+/* Cuando pasamos el mouse por encima del botón */
+.boton-enviar:hover {
+    background-color: #001a4d; /* Se pone un azul más oscuro */
+}

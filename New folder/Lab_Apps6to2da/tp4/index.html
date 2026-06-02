@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Preferencias Tecnológicas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body id="body">
+    <div id="box-main">
+        <form action="datos.html" method="post">
+            <h1>Encuesta de Preferencias Tecnológicas con el profe Soto</h1>
+
+            <div class="campo">
+                <label for="lenguajes">Lenguaje favorito: </label>
+                <select id="lenguajes">
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="CSharp">C#</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label> <b> Nivel de experiencia: </b> </label>
+                <input type="radio" name="experiencia" value="principiante" id="principiante">
+                <label for="principiante">Principiante </label> <br>
+                <input type="radio" name="experiencia" value="intermedio" id="intermedio">
+                <label for="intermedio">Intermedio </label> <br>
+                <input type="radio" name="experiencia" value="avanzado" id="avanzado">
+                <label for="avanzado">Avanzado </label> <br>
+            </div>
+
+            <div class="campo">
+                <label><b>Temas de interes: </b></label>
+                <input type="checkbox" value="frontend" id="frontend">
+                <label for="frontend">Frontend</label> <br>
+                <input type="checkbox" value="backend" id="backend">
+                <label for="backend">Backend</label> <br>
+                <input type="checkbox" value="mobile" id="mobile">
+                <label for="mobile">Mobile</label> <br>
+                <input type="checkbox" value="ia" id="ia">
+                <label for="ia">Inteligencia Artificial</label> <br>
+            </div>
+
+            <hr>
+
+            <div class="campo">
+                <label for="club">Hincha de ?: </label>
+                <select id="club">
+                    <option value="Boca">Club Atletico Boca Juniors</option>
+                    <option value="Descendido1">Descendido #1</option>
+                    <option value="Descendido2">Descendido #2</option>
+                    <option value="Descendido3">Descendido #3</option>
+                    <option value="otro">Otro descendido</option>
+                </select>
+            </div>
+
+            <button type="submit" class="boton-enviar"> Enviar </button>
+
+        </form>
+    </div> </body>
+</html>
