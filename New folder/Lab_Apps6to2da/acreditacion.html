@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acreditación de Prensa - Copa Mundial FIFA 2026</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Copa Mundial de la FIFA 2026</h1>
+        <p>USA · México · Canadá — 11 jun al 19 jul 2026</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Grupos y Fixture</a></li>
+                <li><a href="acreditacion.html">Acreditación de Prensa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Acreditación de Prensa</h2>
+        <p>Completá el formulario para solicitar tu acreditación como periodista en el Mundial 2026.</p>
+
+        <form method="post" action="#">
+            
+            <!-- DATOS PERSONALES -->
+            <fieldset>
+                <legend>Datos personales</legend>
+            
+            <label for="nombre">Nombre y apellido *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="Ej. juan@diario.com.ar" required>
+
+            <label for="medio">Medio de comunicación</label>
+            <input type="text" id="medio" name="medio" placeholder="Ej. Diario La Nación">
+
+            <label for="pais">País de origen *</label>
+            <select id="pais" name="pais" required>
+                <option value="">-- Seleccioná un país --</option>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="españa">España</option>
+                <option value="francia">Francia</option>
+                <option value="mexico">México</option>
+                <option value="uruguay">Uruguay</option>
+            </select>
+            </fieldset>
+
+            <!-- TIPO DE ACREDITACIÓN -->
+            <fieldset>
+                <legend>Tipo de acreditación *</legend>
+            
+            <input type="radio" id="prensa" name="acreditacion" value="prensa">
+            <label for="prensa">Prensa escrita</label>
+            <br>
+
+            <input type="radio" id="tv" name="acreditacion" value="tv">
+            <label for="tv">Televisión</label>
+            <br>
+
+            <input type="radio" id="radio" name="acreditacion" value="radio">
+            <label for="radio">Radio</label>
+            <br>
+
+            <input type="radio" id="digital" name="acreditacion" value="digital">
+            <label for="digital">Medio digital</label>
+
+            <h3>Partidos a cubrir</h3>
+
+            <input type="checkbox" id="partido_semifinal#1" name="partidos" value="fra_esp">
+            <label for="partido_semifinal#1">Francia vs. España</label>
+            <br>
+
+            <input type="checkbox" id="partido_semifinal#2" name="partidos" value="arg_arg">
+            <label for="partido_semifinal#2">Argentina vs. Argelia</label>
+            <br>
+
+            <input type="checkbox" id="partido_3puesto" name="partidos" value="3rd_place">
+            <label for="partido_3puesto">Partido por el 3er puesto</label>
+            <br>
+
+            <input type="checkbox" id="partido3" name="partidos" value="final_worldcup">
+            <label for="partido3">Final del Mundial</label>
+            <br>
+
+
+            <h3>Comentarios</h3>
+
+            <label for="comentarios">¿Algo que quieras agregar?</label> <br>
+            <textarea id="comentarios" name="comentarios" rows="5" placeholder="Escribí aquí..."></textarea>
+
+            <br><br>
+
+            <button type="submit">Enviar solicitud</button>
+            <button type="reset">Limpiar</button>
+        </form>
+
+        <footer>
+            <p>Desarrollado por Facundo Lopez Mendoza — 6º2 (G1) año Laboratorio de Aplicaciones</p>
+        </footer>
+    </main>
+</body>
+</html>
