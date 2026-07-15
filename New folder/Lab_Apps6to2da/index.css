@@ -1,0 +1,181 @@
+:root {
+    --color-primary: #4b9fe8;
+    --color-secondary: #f5b942;
+    --color-bg: #f5f7fb;
+    --color-text: #1f2937;
+    --color-border: #d7dfeb;
+    --color-card: #ffffff;
+}
+/*
+    aptovechando claude como herramienta, para generar los degradados que utiliza la pagina de la fifa y
+    corregir errores de sintaxis en el css, ademas de mejorar la estructura del mismo.
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+header {
+    background: linear-gradient(90deg, var(--color-primary), #1f6fbf);
+    color: #ffffff;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0 0 1rem;
+    opacity: 0.95;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.16);
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+section#grupos {
+    display: grid;
+    gap: 1.2rem;
+}
+
+article.grupo,
+fieldset {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    
+}
+
+h2, h3 {
+    color: var(--color-primary);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+th,
+td {
+    padding: 0.6rem;
+    border-bottom: 1px solid var(--color-border);
+    text-align: left;
+}
+
+tr:first-child {
+    background: #eef4fb;
+    font-weight: bold;
+}
+
+form {
+    display: grid;
+    gap: 0.9rem;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--color-primary);
+    padding: 0 0.3rem;
+}
+
+label {
+    display: block;
+    margin: 0.4rem 0 0.2rem;
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    padding: 0.65rem 0.75rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.35rem;
+}
+
+textarea {
+    width: 100%;
+    min-height: 110px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    background: var(--color-primary);
+    width: fit-content;
+}
+
+button[type="reset"] {
+    background: #6b7280;
+    margin-left: 0.4rem;
+}
+
+button:hover {
+    opacity: 0.95;
+}
+
+footer {
+    text-align: center;
+    color: #6b7280;
+    padding: 1.5rem 0 0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
